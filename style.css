@@ -29,6 +29,11 @@
       color: #fff;
   }
 
+    .dropdown {
+        display: none;
+        cursor: pointer;
+    }
+
 
 /* Navbar */
   .section-navbar {
@@ -47,7 +52,7 @@
       color: #00ACEE;
   }
 
-  .navbar .flex ul {
+  .navbar .flex .nav-links {
       display: flex;
       list-style-type: none;
       align-items: center;
@@ -87,6 +92,7 @@
     width: 20px;
     height: 20px;
 }
+
 
 /* First section*/
 .left-content {
@@ -161,6 +167,8 @@
 }
 
 .right-content img {
+    float: right;
+    margin-right: 40px;
     width: 360px;
     height: 500px;
     animation: slideInFromRight 1s ease-in;
@@ -403,17 +411,74 @@
 /* Media Queries */
 @media only screen and (max-width: 770px) {
 
+    .dropdown {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        right: 0px;
+        transition: 1s ease-in;
+    }
+
+    .dropdown-content .content a {
+        width: 100px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .dropdown-content ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .dropdown-content li {
+        width: 100px;
+        display: flex;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
     .section-navbar {
         padding: 20px;
         height: auto;
+        width: 100%;
     }
 
     .section-navbar .navbar h6 {
         font-size: larger;
     }
 
-    .section-navbar .navbar ul{
+    .section-navbar .navbar .nav-links{
         display: none;
+    
+    }
+    
+    .section-navbar .navbar ul li a{
+        font-size: 10px;
+    }
+
+    .section-navbar .navbar .twitter-login img {
+        width: 10px;
+    }
+
+    .section-navbar .navbar .twitter-login button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
     }
 
     .section-maincontent .row{
@@ -429,8 +494,8 @@
     .section-maincontent .left-content ul{
         display: grid;
         grid-column: 1 / span 1;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
     .section-maincontent .left-content .learn-more{
@@ -439,12 +504,20 @@
         justify-content: center;
     }
 
+    .section-maincontent .left-content h1 {
+        margin-top: 20px;
+    }
+
     .section-maincontent .container #img1 {
         left: 3.3%;
     }
 
-    .section-maincontent .container img {
+    .section-maincontent .left-content .container img {
         margin-left: 30px;
+    }
+    .section-maincontent .right-content img {
+       width: 300px;
+       height: 400px
     }
 
     
@@ -452,7 +525,7 @@
     .section-maincontent .right-content{
         display: flex;
         justify-content: center;
-
+        margin: auto;
     }
 
     .features {
@@ -495,4 +568,16 @@
     .price-plan .priceplan-head {
         text-align: center;
     }
+
+    .price-plan .card .twitter-login button {
+        width: max-width;
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) { 
+    .price-plan .card .twitter-login button {
+        width: 256px;
+    }
+
   }
