@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+
+  button {
+      border: none;
+      color: #fff;
+  }
+
+
+/* Navbar */
+  .section-navbar {
+      width: 100%;
+      height: 620px;
+      background-color: rgb(238, 238, 218);
+  }
+
+  .navbar .flex {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+
+  .navbar h6 {
+      color: #00ACEE;
+  }
+
+  .navbar .flex ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+  }
+
+  .navbar .flex ul li {
+      margin: 10px;
+  }
+
+  .navbar .flex ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .navbar .flex ul li a:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  .navbar .flex .twitter-login button, .left-content .twitter-login button, .price-plan .twitter-login button{
+      background: #00ACEE;
+      border-radius: 5px; 
+      width: 180px;
+      height: 50px; 
+      transition: 0.3s ease-in;
+  }
+
+  .navbar .flex .twitter-login button:hover, .left-content .twitter-login button:hover, .price-plan .twitter-login button:hover{
+    background-color: #0067ee
+}
+
+  .navbar .flex .twitter-login a, .left-content .twitter-login a, .price-plan .twitter-login a{
+    color: white;
+    padding-left: 3px;
+}
+
+  .navbar .flex .twitter-login img, .left-content .twitter-login img, .price-plan .twitter-login img{
+    width: 20px;
+    height: 20px;
+}
+
+/* First section*/
+.left-content {
+    position: relative;
+    margin-top: 50%;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.left-content ul {
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ padding-left: 0px;
+}
+
+.left-content ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+.left-content ul li a{
+    text-decoration: none;
+    color: #0891c7;
+}
+
+.left-content .learn-more{
+    color: #0891c7;
+}
+
+.left-content .learn-more a {
+    transition: 0.3s ease-in;
+}
+
+.left-content .learn-more a:hover{
+    border-bottom: 1px solid #0891c7;
+    color: #00ACEE
+}
+
+.left-content .images img {
+    position: absolute;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.left-content .images #img2 {
+    left: 7%;
+}
+.left-content .images #img3 {
+    left: 11%;
+}
+.left-content .images #img4 {
+    left: 15%;
+}
+.left-content .images #img5 {
+    left: 19%;
+}
+.left-content .images #img6 {
+    left: 24%;
+}
+.left-content .images #img7 {
+    left: 28%;
+}
+.left-content .images #img8 {
+    left: 32%;
+}
+.left-content .images #img9 {
+    left: 36%;
+}
+
+.left-content #p {
+    margin-top: 73px;
+}
+
+.right-content img {
+    width: 360px;
+    height: 500px;
+    animation: slideInFromRight 1s ease-in;
+}
+
+/* Features */
+.features {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    height: 430px;
+
+}
+
+.features h3 {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.features #first-row {
+    animation: slideInFromRight 1s ease-in;
+}
+.features #second-row {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.features .container .card {
+    margin-top: 20px;
+    min-height: 170px;
+}
+
+.features i, p, h6 {
+    margin: 7px;
+}
+
+/* Reviews */
+
+.reviews {   
+    height: 450px;
+    background: #00abee28;
+    padding-top: 1px;
+    
+}
+
+.reviews .container{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.reviews .flex .card-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    
+}
+
+
+.reviews .flex .card .card-header {
+   background-color: #fff;
+   border-bottom: 1px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.reviews .flex .card .card-header .flex1 {
+    display: flex;
+    align-items: center;
+}
+
+.reviews .flex .card .card-header #twitter-logo {
+    width: 20px;
+}
+
+.reviews .flex .card .card-header #user-img{
+    width: 50px;
+}
+
+.reviews .flex .card .card-footer {
+    background-color: #fff;
+    border-top: 1px solid white;
+}
+
+.reviews .flex .card .card-footer ul{
+    display: flex;
+   
+}
+
+.reviews .flex .card .card-footer .flex{
+    justify-content: space-between; 
+    list-style-type: none;
+}
+
+.reviews .flex .card .card-footer img {
+    width: 20px;
+}
+
+.reviews .flex .card {
+    width: 33%;
+    height: fit-content;  
+    border: none;
+    min-height: 200px;
+}
+
+/* Price plan */
+
+.price-plan{
+    margin: auto;
+    padding-top: 20px;
+}
+
+.price-plan .priceplan-head {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-plan a {
+    text-decoration: none;
+    color: #fff;
+}
+.price-plan .twitter-login ul {
+    display: flex;
+    list-style-type: none;  
+    padding-top: 20px;
+}
+
+.price-plan .twitter-login {
+    border-top: 1px solid black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.price-plan .twitter-login button {
+    width: 340px;
+}
+
+.price-plan .card {
+    margin: auto;
+    max-width: 450px;
+   background-color: rgba(250, 235, 215, 0.349);
+   border: 1px solid #e9bc29;
+}
+
+.price-plan .card .card-head {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.price-plan .card .card-content {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.price-plan .card .card-content img {
+    width: 20px;
+    color: lightgreen;
+}
+
+/* Footer*/
+
+.section-footer {
+    display: flex;
+    margin-top: 20px;
+    background: #00abee28;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.section-footer .footer .flex {
+    display: flex;
+    justify-content:space-between;
+}
+
+.section-footer .footer .flex ul {
+    display: flex; 
+}
+.section-footer .footer .flex ul li {
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.section-footer .footer .flex ul li a {
+    text-decoration: none;
+    color: black;
+ }
+.section-footer .footer .flex ul li a:hover {
+    border-bottom: 1px solid black;
+ }
+
+.section-footer .footer img {
+    width: 20px;
+}
+
+/* Keyframes */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBot {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 770px) {
+
+    .section-navbar {
+        padding: 20px;
+        height: auto;
+    }
+
+    .section-navbar .navbar h6 {
+        font-size: larger;
+    }
+
+    .section-navbar .navbar ul{
+        display: none;
+    }
+
+    .section-maincontent .row{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    
+    .section-maincontent .container {
+        text-align: center;
+    }
+
+    .section-maincontent .left-content ul{
+        display: grid;
+        grid-column: 1 / span 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-maincontent .left-content .learn-more{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-maincontent .container #img1 {
+        left: 3.3%;
+    }
+
+    .section-maincontent .container img {
+        margin-left: 30px;
+    }
+
+    
+
+    .section-maincontent .right-content{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .features {
+        height:auto;
+    }
+
+    .features .container {
+        text-align: center;
+    }
+
+    .features .row {
+        display: grid;
+        grid-column: 1 / span 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reviews {
+        height:auto;
+    }
+
+    .reviews .container h3 {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 34px;
+    }
+
+    .reviews .flex .card-section .card{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin: 50px;
+    }
+
+
+    .price-plan {
+        height: auto;
+    }
+
+    .price-plan .priceplan-head {
+        text-align: center;
+    }
+  }
