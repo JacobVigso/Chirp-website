@@ -484,7 +484,8 @@
     }
     .section-maincontent .right-content img {
        width: 300px;
-       height: 400px
+       height: 400px;
+       margin: auto;
     }
 
     
